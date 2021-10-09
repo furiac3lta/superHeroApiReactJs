@@ -1,0 +1,19 @@
+.Hero {
+    position: relative;
+    background-image: url(https://images8.alphacoders.com/570/570875.png);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .Hero__search-container {
+    width: 100%;
+  }
+  

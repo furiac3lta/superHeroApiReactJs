@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Container {
+  max-width: 1420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.Row {
+  width: 100%;
+  display: inline-flex;
+  
+}
+.Col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Col {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1024px) {
+  .Col {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
